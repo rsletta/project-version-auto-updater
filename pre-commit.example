@@ -1,0 +1,8 @@
+#!/bin/sh
+
+# Check that GitVersion is installed
+which gitversion || exit 0
+
+# Update the version number and commit it
+gitversion -output file
+git add GitVersion.json%
