@@ -1,3 +1,29 @@
-[gd_scene format=3 uid="uid://cgapicjgc71dh"]
+[gd_scene load_steps=3 format=3 uid="uid://cgapicjgc71dh"]
+
+[ext_resource type="Texture2D" uid="uid://dpgoyoarq5cp8" path="res://icon.svg" id="1_tembv"]
+[ext_resource type="Script" path="res://test_scene.gd" id="1_xusb3"]
 
 [node name="Node2D" type="Node2D"]
+script = ExtResource("1_xusb3")
+
+[node name="Icon" type="Sprite2D" parent="."]
+position = Vector2(576, 324)
+texture = ExtResource("1_tembv")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="VersionLabel" type="Label" parent="CanvasLayer"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -34.0
+offset_top = 77.0
+offset_right = 34.0
+offset_bottom = 100.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+text = "VERSION"
+horizontal_alignment = 1
